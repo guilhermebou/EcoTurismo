@@ -1,3 +1,4 @@
+<?php include '../../includes/header.php'; ?>
 <?php
 require 'db.php';
 
@@ -6,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
     try {
-        $query = $pdo->prepare("INSERT INTO usuarios (login, senha) VALUES (?, ?)");
+        $query = $pdo->prepare("INSERT INTO usuarios1 (login, senha) VALUES (?, ?)");
         $query->execute([$login, $senha]);
 
         header("Location: login.php");
@@ -36,3 +37,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><a href="login.php">Login</a></p>
 </body>
 </html>
+<?php include '../../includes/footer.php'; ?>

@@ -1,3 +1,4 @@
+<?php include '../../includes/header.php'; ?>
 <?php
 session_start();
 require 'db.php';
@@ -6,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login = trim($_POST["login"]);
     $senha = $_POST["senha"];
 
-    $query = $pdo->prepare("SELECT * FROM usuarios WHERE login = ?");
+    $query = $pdo->prepare("SELECT * FROM usuarios1 WHERE login = ?");
     $query->execute([$login]);
     $user = $query->fetch(PDO::FETCH_ASSOC);
 
@@ -42,3 +43,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>
 
+<?php include '../../includes/footer.php'; ?>
