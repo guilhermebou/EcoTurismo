@@ -3,7 +3,7 @@ require 'db.php';
 include '../../includes/header.php';
 
 try {
-    $query = $pdo->query("SELECT * FROM acervo ORDER BY data_publicacao DESC");
+    $query = $pdo->query("SELECT * FROM acervo ORDER BY data_publi DESC");
     $acervos = $query->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     echo "<p style='color: red;'>Erro ao acessar o banco de dados: " . $e->getMessage() . "</p>";
