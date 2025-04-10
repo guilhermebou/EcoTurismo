@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (!isset($_POST['termos'])) {
         $_SESSION['msg'] = ['type' => 'error', 'text' => 'Você deve aceitar os termos de uso.'];
     } else {
-        // Conexão com o banco de dados
         require_once 'db.php';
         
         try {
