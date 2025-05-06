@@ -21,7 +21,7 @@ $output = shell_exec("python3 map.py 2>&1");
 </head>
 <body>
     <h1>Mapa | Parque da Matinha - Monte Carmelo-MG </h1>
-    <iframe src="meu_mapa.html"></iframe>
+    <iframe src="meu_mapa.html?versao=<?php echo time(); ?>"></iframe>
 </body>
 </html>
 <?php include '../../includes/footer.php'; ?>
