@@ -5,57 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoTurismo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <style>
-        /* Estilos adicionais para o menu */
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .wrapper {
-            display: flex;
-            flex: 1;
-        }
-        
-        .sidebar {
-            width: 250px;
-            background: linear-gradient(to bottom, #28a745, #218838);
-            color: white;
-            position: fixed;
-            height: 100vh;
-            overflow-y: auto;
-        }
-        
-        .main-content {
-            margin-left: 250px;
-            flex: 1;
-            padding: 20px;
-        }
-        
-        .nav-link {
-            transition: all 0.3s;
-            border-left: 3px solid transparent;
-        }
-        
-        .nav-link:hover, .nav-link.active {
-            background: rgba(255,255,255,0.1);
-            border-left: 3px solid white;
-        }
-        
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-            
-            .main-content {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../../CSS/style.css"> 
 </head>
 <body>
     <div class="wrapper">

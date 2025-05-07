@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$usuario = "teste";
-$senha = "123";
+$usuario = "postgres";
+$senha = "Hlm5457767";
 $nome_do_banco = "teste";
 
 $dsn = "pgsql:host=$servername;dbname=$nome_do_banco";

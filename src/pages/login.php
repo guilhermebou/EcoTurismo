@@ -1,6 +1,6 @@
-<?php include '../../includes/header.php'; ?>
-<?php
+<?php 
 session_start();
+include '../../includes/header.php';
 require 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,31 +16,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: auxiliar.php");
         exit();
     } else {
-        $error = "usuario ou senha incorreto.";
+        $error = "Usuário ou senha incorretos.";
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="pt">
-<meta charset="UTF-8">
 
-<body>
-    <h2>Login</h2>
-    <?php if (isset($error)) echo "<p style='color: red;'>$error</p>"; ?>
-    <form action="login.php" method="post">
-        <label>Usuario:</label>
-        <input type="text" name="login" required><br>
-        <label>Senha:</label>
-        <input type="password" name="senha" required><br>
-        <button type="submit">Entrar</button>
-    </form>
-    <p><a href="register.php">Cadastro</a></p>
-    <p><a href="listar.php">Listar Usuarios</a></p>
-
-
-
-
-</body>
-</html>
+<div class="auth-wrapper">
+    <div class="auth-container">
+        <h2 class="auth-title">Login</h2>
+        <?php if (isset($error)): ?>
+            <div class="auth-message error">
+                <?php echo $error; ?>
+            </div>
+        <?php endif; ?>
+        
+        <form class="auth-form" action="login.php" method="post">
+            <div class="form-group">
+                <label for="login">Usuário</label>
+                <input type="text" class="form-control" id="login" name="login" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+            
+            <button type="submit" class="auth-btn">Entrar</button>
+        </form>
+        
+        <div class="auth-divider">ou</div>
+        
+    
+        
+        <div class="auth-links">
+            <a href="register.php">Criar nova conta</a>
+        </div>
+    </div>
+</div>
 
 <?php include '../../includes/footer.php'; ?>

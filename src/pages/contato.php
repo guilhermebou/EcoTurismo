@@ -60,8 +60,7 @@ include '../../includes/header.php';
 
 <div class="container contact-page">
     <h1 class="text-center mb-4">Contato</h1>
-    
-    <!-- Exibe mensagens de feedback -->
+
     <?php if (isset($_SESSION['msg'])): ?>
         <div class="alert alert-<?= $_SESSION['msg']['type'] ?> alert-dismissible fade show" role="alert">
             <?= $_SESSION['msg']['text'] ?>
