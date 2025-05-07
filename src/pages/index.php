@@ -1,6 +1,5 @@
 <?php include '../../includes/header.php'; ?>
 
-<!-- Hero Section -->
 <div class="hero" style="text-align: center;">
     <img src="../images/matinha.jpg" alt="Foto do Parque Matinha">
     <div class="conteudo-hero">
@@ -9,7 +8,6 @@
     </div>
 </div>
 
-<!-- Sobre o Parque -->
 <section id="sobre" class="section-padding bg-light">
     <div class="container">
         <div class="row align-items-center">
@@ -31,68 +29,6 @@
     </div>
 </section>
 
-<!-- Trilhas -->
-<section id="trilhas" class="section-padding">
-    <div class="container">
-        <h2 class="section-title text-center">Nossas Trilhas</h2>
-        <p class="section-subtitle text-center">Explore os caminhos da Matinha</p>
-        
-        <div class="row mt-5">
-            <div class="col-md-4 mb-4">
-                <div class="card trail-card h-100">
-                    <img src="images/trilha-nascentes.jpg" class="card-img-top" alt="Trilha das Nascentes">
-                    <div class="card-body">
-                        <h3>Trilha das Nascentes</h3>
-                        <p>Percurso de 1,5km que leva às principais nascentes do parque, com paradas para observação.</p>
-                        <div class="trail-info">
-                            <span><i class="fas fa-clock"></i> 1h30min</span>
-                            <span><i class="fas fa-mountain"></i> Dificuldade: Moderada</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="trilhas.php#nascentes" class="btn btn-trail">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card trail-card h-100">
-                    <img src="images/trilha-mirante.jpg" class="card-img-top" alt="Trilha do Mirante">
-                    <div class="card-body">
-                        <h3>Trilha do Mirante</h3>
-                        <p>Rota de 2km que culmina em um belo mirante com vista panorâmica da cidade e do parque.</p>
-                        <div class="trail-info">
-                            <span><i class="fas fa-clock"></i> 2h</span>
-                            <span><i class="fas fa-mountain"></i> Dificuldade: Alta</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="trilhas.php#mirante" class="btn btn-trail">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card trail-card h-100">
-                    <img src="images/trilha-ecologica.jpg" class="card-img-top" alt="Trilha Ecológica">
-                    <div class="card-body">
-                        <h3>Trilha Ecológica</h3>
-                        <p>Percurso circular de 1km, ideal para iniciantes e observação de pássaros.</p>
-                        <div class="trail-info">
-                            <span><i class="fas fa-clock"></i> 45min</span>
-                            <span><i class="fas fa-mountain"></i> Dificuldade: Fácil</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="trilhas.php#ecologica" class="btn btn-trail">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Fauna e Flora -->
 <section id="fauna-flora" class="section-padding bg-light">
     <div class="container">
         <h2 class="section-title text-center">Biodiversidade</h2>
